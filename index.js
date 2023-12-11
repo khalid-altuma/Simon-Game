@@ -9,7 +9,7 @@ var level = 0;
 
 $(document).on('touchstart', function () {
     if (!started) {
-        $("#level-title").text("level " + level);
+        $("#level-title").text(level + "مرحلة ");
         nextSequence();
         started = true;
     }
@@ -34,7 +34,7 @@ function checkAnswer(currentLevel) {
         $("body").removeClass("game-over");
         }, 200);
         
-        $("#level-title").text("Game Over, Press Any Key to Restart");
+        $("#level-title").text("لقد خسرت، اضغط اي مكان في الشاشة للبدء");
 
         startOver();
     }
@@ -44,7 +44,7 @@ function nextSequence() {
     userClickedPattren = [];
 
     level++;
-    $("#level-title").text("level " + level);
+    $("#level-title").text(level + "مرحلة ");
 
     var randomNumber = Math.floor(Math.random() * 4);
     var randomChosenColor = buttonColor[randomNumber];
