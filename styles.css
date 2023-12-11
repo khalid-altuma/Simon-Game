@@ -1,4 +1,5 @@
 body {
+  font-family: 'Press Start 2P';
   text-align: center;
   background-color: #011F3F;
 }
@@ -13,16 +14,16 @@ body {
 
 .container {
   display: block;
-  width: 90%;
-  margin: auto;
+  width: 100%;
+  margin: 1rem;
 
 }
 
 .btn {
   margin: 1.5rem;
   display: inline-block;
-  height: 10rem;
-  width: 10rem;
+  height: 16rem;
+  width: 16rem;
   border: 0.5rem solid black;
   border-radius: 20%;
 }
@@ -51,6 +52,14 @@ body {
 .pressed {
   box-shadow: 0 0 1.5rem white;
   background-color: grey;
+}
+#leaderboard-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2.5rem;
+}
+#bestplayer {
+  font-size: 2rem;
+  color: gold;
 }
 
 p {
