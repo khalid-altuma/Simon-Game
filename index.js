@@ -7,7 +7,7 @@ var buttonColor = ["red", "blue", "yellow", "green"];
 var started = false;
 var level = 0;
 
-$(document).click(function () {
+$(document).on('touchstart', function () {
     if (!started) {
         $("#level-title").text("level " + level);
         nextSequence();
