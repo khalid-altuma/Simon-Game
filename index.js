@@ -9,7 +9,7 @@ var level = 0;
 
 $(document).on('touchstart', function () {
     if (!started) {
-        $("#level-title").text(level + " مرحلة ");
+        $("#level-title").text(level + "  مرحلة  ");
         nextSequence();
         started = true;
     }
@@ -44,7 +44,7 @@ function nextSequence() {
     userClickedPattren = [];
 
     level++;
-    $("#level-title").text(level + " مرحلة ");
+    $("#level-title").text(level + "  مرحلة  ");
 
     var randomNumber = Math.floor(Math.random() * 4);
     var randomChosenColor = buttonColor[randomNumber];
